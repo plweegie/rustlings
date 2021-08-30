@@ -7,6 +7,14 @@
 
 // I AM NOT DONE
 
+use std::format;
+
+macro_rules! my_macro {
+    ($t:expr) => {
+        format!("Hello {}", $t);
+    };
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
